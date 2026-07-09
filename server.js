@@ -7,7 +7,8 @@ const PORT = 3000;
 app.get("/", (req, res) => {
   res.json({
     status: "success",
-    message: "Backend server is running"
+    message: "Backend server is running",
+    timestamp: new Date().toISOString()
   });
 });
 
